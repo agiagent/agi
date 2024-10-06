@@ -1,11 +1,505 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>AI导航站</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>ChatGPT AI_Agent</title>
+    <link rel="shortcut icon" href="favcion.ico"/>
+    <link rel="stylesheet" href=" css/iconfont.css">
+    <link rel="stylesheet" href="../plug-in/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-<h1>标题</h1>
-<div>内容</div>
+<div class="container" id="container">
+    <aside class="left-bar" id="leftBar">
+        <div class="title">
+            <p>ChatGPT AI_Agent</p>
+        </div>
+        <nav class="nav">
+
+            <div class="item active"><a href=""><i class="iconfont icon-daohang2"></i>ChatGPT AI_Agent</a><i
+                    class="line"></i>
+            </div>
+            <ul class="nav-item" id="navItem">
+                <li><a href="#aigw"><i class="iconfont icon-yunying"></i>AI文本工具（国外）</a></li>
+                <li><a href="#aign"><i class="iconfont icon-tool"></i>AI文本工具（国内）</a></li>
+                <li><a href="#aihh"><i class="iconfont icon-designer"></i>AI绘画工具</a></li>
+                <li><a href="#aibg"><i class="iconfont icon-github"></i>AI办公工具</a></li>
+                <li><a href="#aisp"><i class="iconfont icon-xuexi1"></i>AI视频工具</a></li>
+                <li><a href="#aiyp"><i class="iconfont icon-yunying"></i>AI音频工具</a></li>
+                <li><a href="#apigj"><i class="iconfont icon-yunying"></i>API工具</a></li>
+                <li><a href="#gwgj"><i class="iconfont icon-yunying"></i>国外工具</a></li>
+                <li><a href="/admin.html"><i class="iconfont icon-yunying"></i>【我的后台】</a></li>
+            </ul>
+            <div class="item comment">
+                <a target="_blank" href="tel:18529090901"><i class="iconfont icon-liuyan"></i>联系我们</a>
+                <a href="mailto:18529090901@163.com?subject=发送邮件">发送邮件</a>
+            </div>
+        </nav>
+    </aside>
+    <section class="main">
+        <div id="mainContent">
+            <!-- 手机端菜单 -->
+            <div id="menu-box">
+                <div id="menu">
+                    <input type="checkbox" id="menu-form">
+                    <label for="menu-form" class="menu-spin">
+                        <div class="line diagonal line-1"></div>
+                        <div class="line horizontal"></div>
+                        <div class="line diagonal line-2"></div>
+                    </label>
+                </div>
+            </div>
+
+            <!-- AI文本工具（国外） -->
+            <div class="box">
+                <a href="" name="aigw"></a>
+                <div class="sub-category">
+                    <div><i class="iconfont icon-yunying"></i>AI文本工具（国外）</div>
+                </div>
+                <div>
+                    <a target="_blank" href="https://chatgpt.com/">
+                        <div class="item">
+                            <div class="no-logo">ChatGPT</div>
+                            <div class="desc">OpenAI旗下AI对话工具</div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://www.anthropic.com/claude">
+                        <div class="item">
+                            <div class="no-logo">Claude</div>
+                            <div class="desc">ChatGPT最为有力的竞争对手之一</div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://gemini.google.com/">
+                        <div class="item">
+                            <div class="no-logo">Bard/Gemini</div>
+                            <div class="desc">Google推出的AI聊天对话机器人</div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://copilot.microsoft.com/">
+                        <div class="item">
+                            <div class="no-logo">Copilot</div>
+                            <div class="desc">微软推出的网页版Copilot助手 【只能用edge浏览器】</div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://x.ai/">
+                        <div class="item">
+                            <div class="no-logo">grok xAI</div>
+                            <div class="desc">马克斯旗下xAI推出的人工智能助手</div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://poe.com/login">
+                        <div class="item">
+                            <div class="no-logo">Poe</div>
+                            <div class="desc">Quora推出的问答机器人集合平台</div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://www.notion.so/zh-cn/product/ai">
+                        <div class="item">
+                            <div class="no-logo">Notion AI</div>
+                            <div class="desc">Notion推出的AI内容创作助手</div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://llama.meta.com/">
+                        <div class="item">
+                            <div class="no-logo">Meet Llama 3.1</div>
+                            <div class="desc">最强的开源大语言模型</div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://www.perplexity.ai/">
+                        <div class="item">
+                            <div class="no-logo">perplexity</div>
+                            <div class="desc">最好用的人工智能搜索工具</div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://www.microsoft.com/zh-cn/edge/features/copilot?form">
+                        <div class="item">
+                            <div class="no-logo">BingChat</div>
+                            <div class="desc">必应聊天</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- AI文本工具（国内） -->
+            <div class="box">
+                <a href="" name="aign"></a>
+                <div class="sub-category">
+                    <div><i class="iconfont icon-tool"></i>AI文本工具（国内）</div>
+                </div>
+                <div>
+                    <a target="_blank" href="https://yiyan.baidu.com/">
+                        <div class="item">
+                            <div class="no-logo">文心一言</div>
+                            <div class="desc">百度推出的基于文心大模型的AI对话互动工具</div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://tongyi.aliyun.com/qianwen/">
+                        <div class="item">
+                            <div class="no-logo">通义千问</div>
+                            <div class="desc">阿里巴巴推出的类ChatGT响应人类指令的大模型</div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://chatglm.cn/?lang=zh">
+                        <div class="item">
+                            <div class="no-logo">智谱清言</div>
+                            <div class="desc">智谱AI推出的生成式AI助手，基于ChatGLM2</div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://kimi.moonshot.cn/">
+                        <div class="item">
+                            <div class="no-logo">KIMI</div>
+                            <div class="desc">Kimi.ai - 帮你看更大的世界</div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://kimi.moonshot.cn/">
+                        <div class="item">
+                            <div class="no-logo">KIMI</div>
+                            <div class="desc">月之暗面Moonshot AI推出的聊天机器人</div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://www.doubao.com/chat/">
+                        <div class="item">
+                            <div class="no-logo">豆包</div>
+                            <div class="desc">字节跳动最新推出的免费AI对话助手</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- AI绘画工具 -->
+            <div class="box">
+                <a href="" name="aihh"></a>
+                <div class="sub-category">
+                    <div><i class="iconfont icon-tool"></i>AI绘画工具</div>
+                </div>
+                <div>
+                    <a target="_blank" href="https://www.midjourney.com/home">
+                        <div class="item">
+                            <div class="no-logo">Midjourney</div>
+                            <div class="desc">最火的AI图像和插画生成工具</div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://stablediffusionweb.com/">
+                        <div class="item">
+                            <div class="no-logo">Stable Diffusion</div>
+                            <div class="desc">StabilityAI推出文本到图像生成AI</div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://www.canva.cn/">
+                        <div class="item">
+                            <div class="no-logo">Canva</div>
+                            <div class="desc">在线设计工具Canva推出的AI图像生成工具</div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://clipdrop.co/">
+                        <div class="item">
+                            <div class="no-logo">Clipdrop</div>
+                            <div class="desc">P图、抠图、移除背景、放大图片、文本删除、绘制图片，一个工具全搞定。无需安装，在线免费使用</div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://www.logosc.cn/">
+                        <div class="item">
+                            <div class="no-logo">标小志</div>
+                            <div class="desc">超过500万用户的AI智能logo设计神器</div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://www.gaoding.com/ai/design">
+                        <div class="item">
+                            <div class="no-logo">稿定智能设计</div>
+                            <div class="desc">输入文案一键生成小红书公众号等配图</div>
+                        </div>
+                    </a>
+
+
+                </div>
+            </div>
+
+            <!-- AI办公工具 -->
+            <div class="box">
+                <a href="" name="aibg"></a>
+                <div class="sub-category">
+                    <div><i class="iconfont icon-tool"></i>AI办公工具</div>
+                </div>
+                <div>
+                    <a target="_blank" href="https://wenku.baidu.com/">
+                        <div class="item">
+                            <div class="no-logo">百度文库AI助手</div>
+                            <div class="desc">基于百度文心一言的一站式只能文档助手</div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://chat-ppt.com/">
+                        <div class="item">
+                            <div class="no-logo">ChatPPT</div>
+                            <div class="desc">必优科技推出国内首个中文AI生成PPT的办公产品</div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://ai.wps.cn/">
+                        <div class="item">
+                            <div class="no-logo">WPS AI</div>
+                            <div class="desc">WPS推出的AI办公助手</div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://tingwu.aliyun.com/home">
+                        <div class="item">
+                            <div class="no-logo">通义听悟</div>
+                            <div class="desc">阿里推出的AI会议转录工具</div>
+                        </div>
+                    </a>
+
+
+                </div>
+            </div>
+
+            <!-- AI视频工具 -->
+            <div class="box">
+                <a href="" name="aisp"></a>
+                <div class="sub-category">
+                    <div><i class="iconfont icon-tool"></i>AI视频工具</div>
+                </div>
+                <div>
+                    <a target="_blank" href="https://app.runwayml.com/login">
+                        <div class="item">
+                            <div class="no-logo">Runway</div>
+                            <div class="desc">强大的AI视频制作工具</div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://pika.art/home">
+                        <div class="item">
+                            <div class="no-logo">Pika</div>
+                            <div class="desc">PikaLabs推出的AI视频生成和编辑工具</div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://www.heygen.com/">
+                        <div class="item">
+                            <div class="no-logo">HeyGen</div>
+                            <div class="desc">专业的AI数字人视频生成工具</div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://weta365.com/">
+                        <div class="item">
+                            <div class="no-logo">奇妙元</div>
+                            <div class="desc">AI数字人视频生成平台，由出门问问推出</div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://aigc.baidu.com/home">
+                        <div class="item">
+                            <div class="no-logo">度加创作工具</div>
+                            <div class="desc">百度官方出品的AIGC创作平台</div>
+                        </div>
+                    </a>
+
+
+                </div>
+            </div>
+
+            <!-- AI音频工具 -->
+            <div class="box">
+                <a href="" name="aiyp"></a>
+                <div class="sub-category">
+                    <div><i class="iconfont icon-tool"></i>AI音频工具</div>
+                </div>
+                <div>
+                    <a target="_blank" href="https://www.stableaudio.com/">
+                        <div class="item">
+                            <div class="no-logo">Stable Audio</div>
+                            <div class="desc">Stability AI 最新推出的音乐生成工具</div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://suno.com/">
+                        <div class="item">
+                            <div class="no-logo">Suno</div>
+                            <div class="desc">高质量的AI音乐创作平台</div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://www.moyin.com/">
+                        <div class="item">
+                            <div class="no-logo">魔音工坊</div>
+                            <div class="desc">AI配音软件，轻松配出媲美真人的声音</div>
+                        </div>
+                    </a>
+
+
+                </div>
+            </div>
+
+            <!-- API工具 -->
+            <div class="box">
+                <a href="" name="apigj"></a>
+                <div class="sub-category">
+                    <div><i class="iconfont icon-tool"></i>（API工具）</div>
+                </div>
+                <div>
+                    <a target="_blank" href="https://www.jijyun.cn/">
+                        <div class="item">
+                            <div class="no-logo">集简云</div>
+                            <div class="desc">软件集成可以如此简单</div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://www.coze.cn/">
+                        <div class="item">
+                            <div class="no-logo">扣子</div>
+                            <div class="desc">由AI提供支持的内容写作助手</div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://www.coze.com/">
+                        <div class="item">
+                            <div class="no-logo">coze</div>
+                            <div class="desc">由AI提供支持的内容写作助手</div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://apifox.com/">
+                        <div class="item">
+                            <div class="no-logo">API平台</div>
+                            <div class="desc">API 设计、开发、测试一体化协作平台</div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://apifox.com/blog/apifox-tutorial-collection/">
+                        <div class="item">
+                            <div class="no-logo">Apifox 使用教程</div>
+                            <div class="desc">Apifox 使用教程合集，从小白到大师</div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://courier.toptopn.com/">
+                        <div class="item">
+                            <div class="no-logo">网页更新提醒</div>
+                            <div class="desc">追踪网页内容变化并立即通知您，7x24小时帮您盯着</div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://dify.ai/zh">
+                        <div class="item">
+                            <div class="no-logo">Dify</div>
+                            <div class="desc">生成式 AI 应用创新引擎</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- 国外工具 -->
+            <div class="box">
+                <a href="" name="gwgj"></a>
+                <div class="sub-category">
+                    <div><i class="iconfont icon-tool"></i>（国外工具）</div>
+                </div>
+                <div>
+                    <a target="_blank" href="https://www.google.com">
+                        <div class="item">
+                            <div class="no-logo">谷歌</div>
+                            <div class="desc">谷歌</div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://www.google.com/gmail">
+                        <div class="item">
+                            <div class="no-logo">谷歌邮箱</div>
+                            <div class="desc">谷歌邮箱</div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://translate.google.com">
+                        <div class="item">
+                            <div class="no-logo">谷歌翻译</div>
+                            <div class="desc">谷歌翻译</div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://github.com/login">
+                        <div class="item">
+                            <div class="no-logo">github</div>
+                            <div class="desc">github</div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://code.visualstudio.com/download">
+                        <div class="item">
+                            <div class="no-logo">Visual Studio Code</div>
+                            <div class="desc">Download Visual Studio Code</div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+
+            <footer class="footer">
+                <div class="copyright">
+                    <div>
+                        Copyright © 2018- 2024
+                        <a href="/index.html">官网</a>
+                    </div>
+                </div>
+            </footer>
+            <div id="fixedBar">
+                <svg class="Zi Zi--BackToTop" title="回到顶部" fill="currentColor" viewBox="0 0 24 24" width="24"
+                     height="24">
+                    <path d="M16.036 19.59a1 1 0 0 1-.997.995H9.032a.996.996 0 0 1-.997-.996v-7.005H5.03c-1.1 0-1.36-.633-.578-1.416L11.33 4.29a1.003 1.003 0 0 1 1.412 0l6.878 6.88c.782.78.523 1.415-.58 1.415h-3.004v7.005z"></path>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="js/jquery.js"></script>
+    <script>
+        var oMenu = document.getElementById('menu');
+        var oLeftBar = document.getElementById('leftBar');
+        var menuFrom = document.getElementById('menu-form');
+
+        oMenu.onclick = function () {
+            if (oLeftBar.offsetLeft == 0) {
+                oLeftBar.style.left = -249 + 'px';
+            } else {
+                oLeftBar.style.left = 0;
+            }
+        }
+
+
+        // 监听页面宽度变化
+        window.onresize = function () {
+            judgeWidth();
+            // console.log(document.documentElement.clientWidth);
+        };
+
+        // 判断页面宽度
+        function judgeWidth() {
+            if (document.documentElement.clientWidth > 481) {
+                oLeftBar.style.left = 0;
+            } else {
+                oLeftBar.style.left = -249 + 'px';
+            }
+        }
+
+
+        var oNavItem = document.getElementById('navItem');
+        var aA = oNavItem.getElementsByTagName('a');
+        for (var i = 0; i < aA.length; i++) {
+            aA[i].onclick = function () {
+                for (var j = 0; j < aA.length; j++) {
+                    aA[j].className = '';
+                }
+                this.className = 'active';
+                if (oLeftBar.offsetLeft == 0) {
+                    if (document.documentElement.clientWidth <= 481) {
+                        oLeftBar.style.left = -249 + 'px';
+                        menuFrom.checked = false;
+
+                    }
+                }
+            }
+        }
+
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() >= 200) {
+                $('#fixedBar').fadeIn(300);
+            } else {
+                $('#fixedBar').fadeOut(300);
+            }
+        });
+        $('#fixedBar').click(function () {
+            $('html,body').animate({scrollTop: '0px'}, 800);
+        })
+    </script>
+</div>
 </body>
+
 </html>
